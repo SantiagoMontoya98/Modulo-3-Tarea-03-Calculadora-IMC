@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./CSS/styles.css">
+  <title>Empresa nutricional de Colombia</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Empresa nutricional de Colombia</h1>
+  </header>
+
+  <main>
+    <section>
+      <form id="registro">
+        <h2>Ingresa tus datos</h2>
+        <label for="nombre">Nombre(s)</label>
+        <input type="text" id="nombre"><br><br>
+        <label for="apellidos">Apellidos</label>
+        <input type="text" id="apellido"><br><br>
+        <label for="ciudad">Ciudad</label>
+        <input type="text" id="ciudad"><br><br>
+        <label for="direccion">Dirección</label>
+        <input type="text" id="direccion"><br><br>
+        <label for="telefono">Teléfono</label>
+        <input type="text" id="telefono"><br><br>
+        <label for="correo">Correo Electronico</label>
+        <input type="text" id="correo"><br><br>
+        <input type="button" id="boton" value="Registrarse">
+        <p></p>
+      </form>
+
+      <p id="registro-ok">Usuario registrado con exito!</p>
+
+      <form id="calculadora">
+        <h2>CALCULADORA IMC</h2>
+        <p>Descubra su indice de masa corporal</p>
+        <label for="sexo">Sexo</label>
+        <i id="hombre" class="fas fa-male"></i><span id="linea">l</span><i id="mujer" class="fas fa-female"></i><br><br>
+        <label for="edad">Edad</label>
+        <input type="text" id="edad"><br><br>
+        <label for="peso">Peso</label>
+        <input type="text" id="peso"><span class="medida medida-KG">KG</span><br><br>
+        <label for="altura">Estatura</label>
+        <input type="text" id="estatura"><span class="medida medida-M">M</span><br><br>
+        <input type="button" id="boton-imc" value="CALCULAR IMC">
+        <p id="validacion"></p>
+      </form>
+
+      <div id="resultado">
+        <h3>Resultado</h3>
+        <p id="numero"></p>
+        <p id="categoria"></p>
+      </div>
+
+      <div id="estadisticas">
+        <h3>Estadisticas</h3>
+        <div id="mujeres">
+          <p>IMC Promedio de las mujeres</p>
+          <p id="IMC-mujeres"></p>
+          <p id="categoria-mujeres"></p>
+        </div>
+        <div id="hombres">
+          <p>IMC Promedio de los hombres</p>
+          <p id="IMC-hombres"></p>
+          <p id="categoria-hombres"></p>
+        </div>
+      </div>
+
+      <div id="categoria-imc">
+        <h3>ÍNDICE DE MASA CORPORAL CATEGORÍA</h3>
+        <ul>
+          <li>Por debajo de 18.5 Por debajo del peso</li>
+          <li>18.5 a 24.99 Saludable</li>
+          <li>25.0 a 29.99 Con sobrepeso</li>
+          <li>30.0 a 39.99 Obeso</li>
+          <li>Más de 40 Obesidad extrema o de alto riesgo</li>
+        </ul>
+      </div>
+
+      <button id="regresar">Regresar</button>
+
+      <div id="br">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="./JS/script.js" type="module"></script>
+
+</body>
+
+</html>
